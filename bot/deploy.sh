@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # script locked, loaded, and ready to deploy on build day
-# examples of use: ./vendor/aospx/bot/deploy.sh
-#      make clean: ./vendor/aospx/bot/deploy.sh -c
-# only sync+lunch: ./vendor/aospx/bot/deploy.sh -s
+# examples of use: ./vendor/aospsx/bot/deploy.sh
+#      make clean: ./vendor/aospsx/bot/deploy.sh -c
+# only sync+lunch: ./vendor/aospsx/bot/deploy.sh -s
 
 BUILD_ROOT=`pwd`
 cd $BUILD_ROOT
@@ -46,5 +46,5 @@ lunch
     if [ "$STOP" = "true" ]; then
         echo "stopping from full deployment"
     else
-        ./vendor/aospx/bot/build_device.sh
+        ./vendor/aospsx/bot/build_device.sh
     fi

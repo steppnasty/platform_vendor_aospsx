@@ -1,1 +1,1 @@
-add_lunch_combo aospx_glacier-userdebug
+add_lunch_combo aospsx_glacier-userdebug

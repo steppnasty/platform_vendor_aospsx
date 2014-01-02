@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # you MUST make 'lunch' or run deploy.sh before attempting to build
-# example of use: ./vendor/aospx/bot/build_device.sh
+# example of use: ./vendor/aospsx/bot/build_device.sh
 
 # $1 should be device name
 # select device and prepare varibles
@@ -27,7 +27,7 @@ fi
 TARGET_VENDOR=$(echo $TARGET_PRODUCT | cut -f1 -d '_')
 
 # build
-    make -j$(($(grep processor /proc/cpuinfo | wc -l) * 2)) aospx 2>&1
+    make -j$(($(grep processor /proc/cpuinfo | wc -l) * 2)) aospsx 2>&1
 
 # changelog
     ./changelog_gen.sh 10/17/2012

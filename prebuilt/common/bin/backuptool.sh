@@ -5,7 +5,7 @@
 
 C=/tmp/backupdir
 S=/system
-V=aospX-1
+V=aospSX-1
 
 PROCEED=1;
 

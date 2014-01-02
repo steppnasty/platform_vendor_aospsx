@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aospx_glacier.mk
+    $(LOCAL_DIR)/aospsx_glacier.mk

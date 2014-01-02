@@ -2,18 +2,18 @@
 $(call inherit-product, device/htc/glacier/full_glacier.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aospx/products/common.mk)
+$(call inherit-product, vendor/aospsx/products/common.mk)
 
 # Inherit proprietary qcom stuff.
 $(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
 
 # Include GSM stuff
-$(call inherit-product, vendor/aospx/products/gsm.mk)
+$(call inherit-product, vendor/aospsx/products/gsm.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := aospx_glacier
+PRODUCT_NAME := aospsx_glacier
 PRODUCT_BRAND := full_glacier
 PRODUCT_DEVICE := glacier
 PRODUCT_MODEL := MyTouch 4G

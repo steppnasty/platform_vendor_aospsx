@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # an example of how to use script-gen:
-# ./vendor/aospx/bot/changelog_gen.sh 6/4/2012
+# ./vendor/aospsx/bot/changelog_gen.sh 6/4/2012
 # try 'lunch' if problems occur
 
 sdate=${1}
@@ -38,7 +38,7 @@ done
 echo "Changelog Generated!"
 
 cd "$ANDROID_PRODUCT_OUT"
-zip aospX-1.0.0-MR1SG-*.zip system/etc/Changelog_$cdate.txt
+zip aospSX-1.0.0-MR1SG-*.zip system/etc/Changelog_$cdate.txt
 echo "  to completed build..."
 echo "Complete."
 

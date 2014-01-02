@@ -6,5 +6,5 @@ PRODUCT_PACKAGES += \
        AospXStockBlu
 
 PRODUCT_COPY_FILES += \
-       vendor/aospx/products/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/aospsx/products/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 

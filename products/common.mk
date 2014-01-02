@@ -1,6 +1,6 @@
-# Generic aospX product
-PRODUCT_NAME := aospx
-PRODUCT_BRAND := aospx
+# Generic aospSX product
+PRODUCT_NAME := aospsx
+PRODUCT_BRAND := aospsx
 PRODUCT_DEVICE := generic
 
 # Google Apps
@@ -13,7 +13,7 @@ KERNEL_MODULES_DIR:=/system/lib/modules
 TINY_TOOLBOX:=true
 
 # T-Mobile theme engine
-include vendor/aospx/products/themes_common.mk
+include vendor/aospsx/products/themes_common.mk
 
 # Bring in all audio files
 include frameworks/base/data/sounds/AllAudio.mk
@@ -64,19 +64,19 @@ PRODUCT_PACKAGES += \
 
 # Backuptool
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+    vendor/aospsx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
 
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/aospx/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/aospx/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
-    vendor/aospx/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/aospsx/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/aospsx/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/aospsx/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
+    vendor/aospsx/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/aospx/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/aospx/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions
+    vendor/aospsx/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/aospsx/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/aospsx/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -84,30 +84,30 @@ PRODUCT_COPY_FILES += \
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aospsx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/app/OTAUpdater.apk:system/app/OTAUpdater.apk
+    vendor/aospsx/prebuilt/common/app/OTAUpdater.apk:system/app/OTAUpdater.apk
 
 # BT config
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/dictionaries
 
 
-# aospX Version
+# aospSX Version
 PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0
-PRODUCT_VERSION_EXTRA = MR2
+PRODUCT_VERSION_EXTRA = 
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76L
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=aospX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_VERSION_EXTRA)-$(PRODUCT_RELEASE_NAME) \
-	otaupdater.otaid=stepp-aospx \
+	ro.modversion=aospSX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_VERSION_EXTRA)-$(PRODUCT_RELEASE_NAME) \
+	otaupdater.otaid=aospSX \
 	otaupdater.otatime=20130122-0850 \
 	otaupdater.otaver=$(PRODUCT_VERSION_EXTRA)
 
