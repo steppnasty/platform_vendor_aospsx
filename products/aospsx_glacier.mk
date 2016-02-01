@@ -10,6 +10,9 @@ $(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
 # Include GSM stuff
 $(call inherit-product, vendor/aospsx/products/gsm.mk)
 
+# Include additional build utilities
+$(call inherit-product, vendor/aospsx/products/utils.mk)
+
 #
 # Setup device specific product configuration.
 #
