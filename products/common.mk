@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     CalendarProvider \
     CellBroadcastReceiver \
+    Torch \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
