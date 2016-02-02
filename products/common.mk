@@ -97,6 +97,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/dictionaries
 
+# Board platforms lists to be used for
+# TARGET_BOARD_PLATFORM specific featurization
+QCOM_BOARD_PLATFORMS := msm7x30
 
 # aospSX Version
 PRODUCT_VERSION_MAJOR = 1
