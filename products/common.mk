@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
+    OTAUpdateCenter \
     tune2fs
 
 # Backuptool
@@ -86,9 +87,6 @@ PRODUCT_COPY_FILES += \
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/aospsx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
-
-PRODUCT_COPY_FILES += \
-    vendor/aospsx/prebuilt/common/app/OTAUpdater.apk:system/app/OTAUpdater.apk
 
 # BT config
 PRODUCT_COPY_FILES += \
