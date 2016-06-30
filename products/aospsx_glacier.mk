@@ -13,6 +13,9 @@ $(call inherit-product, vendor/aospsx/products/gsm.mk)
 # Include additional build utilities
 $(call inherit-product, vendor/aospsx/products/utils.mk)
 
+# Include Camera stuff
+$(call inherit-product, vendor/aospsx/products/camera.mk)
+
 #
 # Setup device specific product configuration.
 #
