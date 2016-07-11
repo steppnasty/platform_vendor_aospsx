@@ -1,5 +1,6 @@
 BUILD_EMULATOR_CAMERA_HAL := false
 TARGET_USE_MM_OPEN_DAEMON := true
+TARGET_USE_CAF_CAMERA := true
 
 PRODUCT_PACKAGES += \
     mm_daemon \
