@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
+# OTA Update Helper
+PRODUCT_COPY_FILES += \
+    vendor/aospsx/prebuilt/common/etc/OTA-Update-helper.sh:system/etc/OTA-Update-helper.sh
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/dictionaries
 
@@ -111,4 +115,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	otaupdater.otaid=aospSX \
 	otaupdater.otatime=20160714-1812 \
 	otaupdater.otaver=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
+	otaupdater.sdcard.recovery=cache/recovery \
+	otaupdater.rebootcmd=/system/etc/OTA-Update-helper.sh \
 
