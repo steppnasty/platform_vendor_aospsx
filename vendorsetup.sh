@@ -1,1 +1,2 @@
 add_lunch_combo aospsx_glacier-userdebug
+add_lunch_combo aospsx_doubleshot-userdebug

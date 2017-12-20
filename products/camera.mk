@@ -5,4 +5,5 @@ TARGET_USE_CAF_CAMERA := true
 PRODUCT_PACKAGES += \
     mm_daemon \
     libmmdaemon_s5k4e1gx \
-    libmmdaemon_mt9v113
+    libmmdaemon_mt9v113 \
+    libmmdaemon_imx105

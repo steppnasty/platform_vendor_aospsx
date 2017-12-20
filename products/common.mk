@@ -102,6 +102,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aospsx/overlay/dictionaries
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
 QCOM_BOARD_PLATFORMS := msm7x30
+QCOM_BOARD_PLATFORMS += msm8660
 
 # aospSX Version
 PRODUCT_VERSION_MAJOR = 1
