@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    OTAUpdateCenter \
+    OTAUpdateCenter.apk \
     tune2fs
 
 # Backuptool
