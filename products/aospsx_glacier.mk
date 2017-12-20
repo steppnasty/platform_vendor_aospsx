@@ -20,7 +20,7 @@ $(call inherit-product, vendor/aospsx/products/camera.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := aospsx_glacier
-PRODUCT_BRAND := full_glacier
+PRODUCT_BRAND := aospSX
 PRODUCT_DEVICE := glacier
 PRODUCT_MODEL := MyTouch 4G
 PRODUCT_MANUFACTURER := HTC
