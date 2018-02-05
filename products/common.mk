@@ -1,10 +1,19 @@
+# Include Gapps in build
+TARGET_VENDOR_GOOGLE := true
+
 # Generic aospSX product
 PRODUCT_NAME := aospsx
 PRODUCT_BRAND := aospsx
 PRODUCT_DEVICE := generic
 
 # Google Apps
+ifeq ($(TARGET_VENDOR_GOOGLE),true)
 $(call inherit-product-if-exists, vendor/google/google-vendor.mk)
+else
+PRODUCT_PACKAGES += \
+    Provision \
+    QuickSearchBox
+endif
 
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
