@@ -22,6 +22,31 @@ QUIET=1
 BASE=`pwd`
 BRUTECRUSH="-brute"
 TMPDIR=/tmp/opticharge-$$
+IGNORE_APKS="
+    ChromeBookmarksSyncAdapter.apk
+    ConfigUpdater.apk
+    GenieWidget.apk
+    Gmail.apk
+    GmsCore.apk
+    GoogleBackupTransport.apk
+    GoogleCalendarSyncAdapter.apk
+    GoogleContactsSyncAdapter.apk
+    GoogleEars.apk
+    GoogleFeedback.apk
+    GoogleLoginService.apk
+    GooglePartnerSetup.apk
+    GooglePlus.apk
+    GoogleServicesFramework.apk
+    GoogleTTS.apk
+    LatinImeDictionaryPack.apk
+    MediaUploader.apk
+    NetworkLocation.apk
+    OneTimeInitializer.apk
+    Phonesky.apk
+    QuickSearchBox.apk
+    SetupWizard.apk
+    TalkBack.apk
+    VoiceSearchStub.apk"
 
 if [ -z "$BRUTE_PNGCRUSH" ]
 then
@@ -88,6 +113,13 @@ fi
 if [ -e "$1" ];
 then
     NAME=`basename $1`;
+    for IGNORE_APK in $IGNORE_APKS
+    do
+        if [ $NAME = $IGNORE_APK ]
+        then
+            exit 0
+        fi
+    done
     echo "Optimizing $NAME...";
 
     if [ "$2" != "" ];
