@@ -25,7 +25,7 @@ TINY_TOOLBOX:=true
 include vendor/aospsx/products/themes_common.mk
 
 # Bring in all audio files
-include frameworks/base/data/sounds/AllAudio.mk
+include frameworks/base/data/sounds/NewAudio.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
