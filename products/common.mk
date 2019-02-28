@@ -123,7 +123,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JDQ39E
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.modversion=aospSX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_RELEASE_NAME) \
 	otaupdater.otaid=aospSX \
-	otaupdater.otatime=20190208-1400 \
+	otaupdater.otatime=20190228-1400 \
 	otaupdater.otaver=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
 	otaupdater.sdcard.recovery=cache/recovery \
 	otaupdater.rebootcmd=/system/etc/OTA-Update-helper.sh \
